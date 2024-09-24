@@ -4,9 +4,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Database connection
-$servername = "localhost";
+$servername = "db";
 $username = "root";
-$password = "";
+$password = "rootpassword";
 $dbname = "Challenge"; // Your database name
 
 $conn = new mysqli($servername, $username, $password, $dbname);
