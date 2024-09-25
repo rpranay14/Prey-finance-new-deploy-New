@@ -34,11 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["file"])) {
             // Move file to server
             if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
                 // Insert the content and image path into the database
-                $name = $conn->real_escape_string($_POST["name"]);
-                $email = $conn->real_escape_string($_POST["email"]);
-                $subject = $conn->real_escape_string($_POST["subject"]);
-                $content = $conn->real_escape_string($_POST["content"]);
-                $sql = "INSERT INTO uploads (name, email, subject, message, image) VALUES ('$name', '$email', '$subject', '$content', '$fileName')";
+                echo "File uploaded successfully.";
 
                 if ($conn->query($sql) === TRUE) {
                     $message = "Your complaint has been successfully sent!";
