@@ -25,11 +25,9 @@ $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif','php3'];
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["file"])) {
     // Validate file upload
     if ($_FILES["file"]["error"] == UPLOAD_ERR_OK) {
-        $fileName = $_FILES["file"]["name"];
-        $tempFilePath = $_FILES["file"]["tmp_name"];
-        $newFileName = uniqid() . '_' . $fileName;
-      
-        $targetFilePath = $uploadDir . $newFileName;
+        $fileName = basename($_FILES["file"]["name"]);
+        $fileExtension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+        $targetFilePath = $uploadDir . $fileName;
 
         // Check if the file extension is allowed
         if (in_array($fileExtension, $allowedExtensions)) {
