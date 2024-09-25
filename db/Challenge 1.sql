@@ -236,3 +236,91 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+CREATE TABLE `uploads` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+
+INSERT INTO `uploads` (`id`, `name`, `email`, `subject`, `message`, `image`) VALUES
+(1, '/Applications/XAMPP/xamppfiles/htdocs/preyfinance/uploads/Screenshot 2024-09-04 at 9.39.08 AM.png', 'sdsd', '2024-09-07 21:34:26', '', ''),
+(2, '/Applications/XAMPP/xamppfiles/htdocs/preyfinance/uploads/test.html', 'sdas', '2024-09-07 21:35:35', '', ''),
+(3, 'sukh', 'sukh@gmail.com', '2332', 'ssdc', 'Screenshot 2024-09-04 at 9.39.54 AM.png'),
+(4, 'sadas', 'sukh@gmail.com', 'saas', 'hiiii', 'Screenshot 2024-09-04 at 9.39.54 AM.png'),
+(5, 'sukhdeep', 'ss@gmail.com', 'sadsa', 'sss', 'Screenshot 2024-09-04 at 9.39.08 AM.png'),
+(6, 'sukh', 'sukh@gmail.com', 'sdsa', 'sds', 'Screenshot 2024-09-04 at 9.39.08 AM.png'),
+(7, 'sadas', 'ss@gmail.com', 'asds', 'sdas', 'Screenshot 2024-09-04 at 9.40.06 AM.png'),
+(8, 'sukhdeep', 'ss@gmail.com', 'sadsa', 'sss', 'test.php'),
+(9, 'sukhdeep', 'ss@gmail.com', 'shiih', 'afasds', 'Screenshot 2024-09-04 at 9.40.06 AM.png'),
+(10, 'sukh', 'sukh@gmail.com', 'sddsa', 'sdas', 'Screenshot 2024-09-04 at 9.39.54 AM.png'),
+(11, 'sukh', 'sukh@gmail.com', 'sddsa', 'sdas', 'Screenshot 2024-09-04 at 9.39.54 AM.png'),
+(12, 'sukh', 'sukh@gmail.com', 'sddsa', 'sdas', 'Screenshot 2024-09-04 at 9.39.54 AM.png'),
+(13, 'sukhdeep', 'ss@gmail.com', 'sadasd', 'sdfsd', 'Screenshot 2024-09-04 at 9.39.08 AM.php.png'),
+(14, 'sukhdeep', 'ss@gmail.com', 'sadasd', 'sdfsd', 'Screenshot 2024-09-04 at 9.39.08 AM.php.png'),
+(15, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(16, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(17, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(18, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(19, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(20, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(21, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(22, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(23, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(24, 'sukhdeep', 'ss@gmail.com', 'sdad', 'sfsd', 'Asset 2.php.png'),
+(25, 'sukh', 'sukh1@gmail.com', 'asdasds', 'sdasd', 'test.jpg'),
+(26, 'sdasd', 's@m.com', 'sdfdsf', 'dsfsdf', 'test.php.jpg'),
+(27, 'sdasd', 's@m.com', 'sdfdsf', 'dsfsdf', 'test.php.jpg'),
+(28, 'sukh', 'sukh1@gmail.com', 'saas', 'sdfds', 'test.php3'),
+(29, 'sadas', 'ss@gmail.com', 'dcas', 'asdas', 'Screenshot 2024-09-04 at 9.40.06 AM.png'),
+(30, 'adas', 'sukh1@gmail.com', 'sds', 'dsfsd', 'Screenshot 2024-09-04 at 9.39.08 AM.png'),
+(31, 'sk', 'ss@gmail.com', 'sdfd', 'sdfsd', 'test.jpg'),
+(32, 'sk', 'ss@gmail.com', 'sdfd', 'sdfsd', 'test.jpg'),
+(33, 'sukhdeep', 'ss@gmail.com', 'fsda', 'sdasd', 'Asset 2.png'),
+(34, 'sukhdeep', 'ss@gmail.com', 'sdfsd', 'sdfsdf', 'test.php.png'),
+(35, 'sukh', 'ss@gmail.com', 'saas', 'dfdsf', 'vptest.php3'),
+(36, 'asdas', 'sukh1@gmail.com', 'sdsa', 'sdsa', 'test.php3'),
+(37, 'asdas', 'sukh1@gmail.com', 'sdsa', 'sdsa', 'test.php3'),
+(38, 'sukh', 'sukh@gmail.com', 'hii', 'hii', 'Screenshot 2024-09-17 at 11.10.41 AM.png'),
+(39, 'sukh', 'sukh@gmail.com', 's', 'sdfd', 'Screenshot 2024-09-17 at 11.10.41 AM.png'),
+(40, 'sdasd', 'ss@gmail.com', 'sukh', 'sdfsdf', 'Screenshot 2024-09-17 at 11.10.41 AM.png'),
+(41, 'xukh', 'ss@gmail.com', 'sf', 's', 'test.php3'),
+(42, 's', 'sukh@gmail.com', 's', 'ss', 'test.php3'),
+(43, 'sukh', 'sukh1@gmail.com', 'hihih', 'hiiii', 'box2.png'),
+(44, 'sukh', 'sukh@gmail.com', 'sfd', 'sdfds', 'payload.png'),
+(45, 'sukh', 'sukh@gmail.com', 'sfd', 'sdfds', 'payload.png'),
+(46, 'sukh', 'sukh@gmail.com', 'sdfdsf', 'sdfds', 'test.php3'),
+(47, 'sukh', 'sukh@gmail.com', 'sdfsd', 'sdfds', 'reversetest.php3');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `uploads`
+--
+ALTER TABLE `uploads`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `uploads`
+--
+ALTER TABLE `uploads`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
